@@ -1,0 +1,40 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.30/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.30",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+        "name": "박병준",
+        "websiteUrl": "${{DEVELOPER_WEBSITE_URL}}",
+        "privacyUrl": "${{DEVELOPER_PRIVACY_URL}}",
+        "termsOfUseUrl": "${{DEVELOPER_TERMS_URL}}"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "MS Tech Navigator",
+        "full": "MS Tech Navigator - Microsoft 기술 학습 도우미"
+    },
+    "description": {
+        "short": "Microsoft 공식 문서와 로드맵 기반 사내 기술 학습 도우미",
+        "full": "Microsoft Learn 공식 문서, Microsoft 365 로드맵, Azure 업데이트, Microsoft 공식 커뮤니티와 블로그를 기반으로 최신 Microsoft 기술을 학습하고 질의할 수 있는 사내 에이전트입니다. 개념 설명, 설정 방법, 코드 샘플, 출시 일정, 지원 종료 정보와 학습 퀴즈를 제공하며, 모든 답변에 공식 출처 링크를 함께 제시합니다."
+    },
+    "accentColor": "#0F6CBD",
+    "supportsChannelFeatures": "tier1",
+    "composeExtensions": [],
+    "copilotAgents": {
+        "declarativeAgents": [            
+            {
+                "id": "declarativeAgent",
+                "file": "declarativeAgent.json"
+            }
+        ]
+    },
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

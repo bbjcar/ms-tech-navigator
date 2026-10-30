@@ -1,0 +1,6 @@
+{
+  "servers": {
+    "learn": { "type": "http", "url": "https://learn.microsoft.com/api/mcp" },
+    "releasecomms": { "type": "http", "url": "https://www.microsoft.com/releasecommunications/mcp" }
+  }
+}

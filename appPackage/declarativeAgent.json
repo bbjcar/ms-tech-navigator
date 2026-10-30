@@ -1,0 +1,42 @@
+{
+    "version": "v1.8",
+    "name": "MS Tech Navigator",
+    "description": "Microsoft Learn 공식 문서, Microsoft 365 로드맵, Azure 업데이트를 기반으로 최신 Microsoft 기술을 학습하고 질의할 수 있는 사내 기술 학습 도우미입니다.",
+    "instructions": "$[file('instruction.txt')]",
+    "capabilities": [
+        {
+            "name": "WebSearch",
+            "sites": [
+            { "url": "https://techcommunity.microsoft.com" },
+            { "url": "https://learn.microsoft.com/en-us/answers" },
+            { "url": "https://support.microsoft.com/en-us" },
+            { "url": "https://www.microsoft.com/en-us/copilot/blog"}
+            ]
+        },
+        { "name": "CodeInterpreter" },
+        { "name": "GraphicArt" },
+        { "name": "OneDriveAndSharePoint"},
+        { "name": "TeamsMessages"},
+        { "name": "Email" },
+        { "name": "Meetings" }
+    ],
+    "conversation_starters": [
+        { "title": "최신 로드맵", "text": "이번 달 Microsoft Copilot 로드맵 중 Rolling out 상태인 기능 알려줘" },
+        { "title": "Copilot Studio", "text": "Copilot Studio에서 MCP 서버를 연결하는 방법 알려줘" },
+        { "title": "Power Platform", "text": "Power Platform 관리형 환경(Managed Environment)의 주요 기능은?" },
+        { "title": "Azure 업데이트", "text": "최근 Azure 업데이트 중 지원 종료(retirement) 예정 항목 알려줘" },
+        { "title": "코드 샘플", "text": "Graph API로 Teams 채널 메시지를 조회하는 코드 샘플 보여줘" },
+        { "title": "학습 퀴즈", "text": "Microsoft Entra ID 기초 개념으로 OX 퀴즈 5문제 내줘" }
+    ],
+    "actions": [
+        {
+            "id": "mslearnPlugin",
+            "file": "ai-plugin.json"
+        },
+        {
+            "id": "msreleasePlugin",
+            "file": "ai-plugin_1.json"
+        }
+    ],
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.8/schema.json"
+}
